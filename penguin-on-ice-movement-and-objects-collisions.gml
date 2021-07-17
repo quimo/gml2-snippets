@@ -10,7 +10,6 @@ player_deceleration = 0.04;
 player_stop_movement_threshold = 60;
 player_stop_vertical_movement_timing = 0;
 player_stop_horizontal_movement_timing = 0;
-player_sprite_dimension = 32;
 image_speed = 0.5;
 
 key_right = 0;
