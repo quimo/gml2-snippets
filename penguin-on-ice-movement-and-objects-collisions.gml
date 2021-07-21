@@ -1,5 +1,5 @@
 /**
-* Object: obj_player | Event: Create
+* Object: obj_penguin | Event: Create
 */
 
 player_speed_h = 0;
@@ -53,13 +53,13 @@ function verticaldecelerationTimerReached() {
 function decelerate(direction) {
     if (direction == "horizontal") {
         if (player_speed_h > 0) {
-            if (player_speed_h <= 0.04) {
+            if (player_speed_h <= player_deceleration) {
                 player_speed_h = 0;
             } else {
                 player_speed_h -= player_deceleration;
             }
         } else if (player_speed_h < 0) {
-            if (player_speed_h >= -0.04) {
+            if (player_speed_h >= -player_deceleration) {
                 player_speed_h = 0;
             } else {
                 player_speed_h += player_deceleration;
@@ -67,13 +67,13 @@ function decelerate(direction) {
         }
     } else if (direction == "vertical") {
         if (player_speed_v > 0) {
-            if (player_speed_v <= 0.04) {
+            if (player_speed_v <= player_deceleration) {
                 player_speed_v = 0;
             } else {
                 player_speed_v -= player_deceleration;
             }
         } else if (player_speed_v < 0) {
-            if (player_speed_v >= -0.04) {
+            if (player_speed_v >= -player_deceleration) {
                 player_speed_v = 0;
             } else {
                 player_speed_v += player_deceleration;
@@ -180,7 +180,7 @@ function setAnimations() {
 }
 
 /**
-* Object: obj_player | Event: Step
+* Object: obj_penguin | Event: Step
 */
 
 key_right = keyboard_check(vk_right);

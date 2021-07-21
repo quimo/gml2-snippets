@@ -6,9 +6,8 @@ distance = 5;
 
 /**
 * Object: obj_player | Event: Step
-* La collisione è rilevata solo se
-* gli oggetti che vengono a contatto
-* hanno flaggato l'attributo "Solid"
+* la rilevazione della collisione avviene
+* sulla "Collision mask" dello sprite
 */
 
 // rilevazione movimento orizzontale

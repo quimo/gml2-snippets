@@ -7,8 +7,8 @@ collision_gap = distance + 1;
 
 /**
 * Object: obj_player | Event: Step
-* La collisione è rilevata solo se
-* gli oggetti che vengono a contatto
+* La collisione è rilevata da place_free()
+* solo se gli oggetti che vengono a contatto
 * hanno flaggato l'attributo "Solid"
 */
 
