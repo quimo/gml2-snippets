@@ -38,7 +38,7 @@ if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)) {
 }
 
 /**
-* Object: obj_menu | Event: Draw
+* Object: obj_menu | Event: Draw GUI
 * l'evento draw viene eseguito ad ogni evento step:
 * 1) default draw: su tutti gli oggetti della room che possiedono
 * uno sprite (l'evento draw lo disegna) e hanno settato il flag "visible"
