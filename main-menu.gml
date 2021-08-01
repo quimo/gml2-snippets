@@ -2,8 +2,6 @@
 * Object: obj_menu | Event: Create
 */
 
-position_x = x;
-position_y = y;
 item_height = 32;
 items_index = 0;
 

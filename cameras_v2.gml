@@ -29,8 +29,8 @@ view_camera[0] = camera_create_view(0, 0, viewport_width, viewport_height, 0, -1
 // imposta la finestra di gioco al centro della viewport del monitor
 var _dwidth = display_get_width();
 var _dheight = display_get_height();
-var _xpos = (_dwidth / 2) - viewport_width;
-var _ypos = (_dheight / 2) - viewport_height;
+var _xpos = (_dwidth / 2) - (viewport_width / 2);
+var _ypos = (_dheight / 2) - (viewport_height / 2);
 window_set_rectangle(_xpos, _ypos, viewport_width, viewport_height);
 surface_resize(application_surface, viewport_width, viewport_height);
 
